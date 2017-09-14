@@ -1,0 +1,46 @@
+Host *
+    IdentityFile ~/.ssh/brayfe
+
+Host *
+    IdentityFile ~/.ssh/id_rsa
+
+# To prevent confirmation of new 
+# server connections for sites on Pantheon
+Host *.drush.in
+  StrictHostKeyChecking no
+
+Host *.lnstar.com
+    user fbray
+
+Host mccombs
+    hostname 67.158.192.200
+    User beanstalk
+
+Host stark
+    hostname stark.its.utexas.edu
+    port 6421
+    user production
+
+Host dbi*
+    hostname uts.cc.utexas.edu
+    User facon
+    IdentityFile ~/.ssh/brayfe
+
+Host snow
+    hostname snow.its.utexas.edu
+    port 6421
+
+Host utweb-*.its.utexas.edu
+    ForwardAgent yes
+  
+Host panel.utweb.utexas.edu
+    ForwardAgent yes
+
+Host *.its.utexas.edu
+    ForwardAgent yes
+
+Host tnl
+    hostname iam1-web-p03.its.utexas.edu
+    port 6421
+
+
