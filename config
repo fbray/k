@@ -1,16 +1,16 @@
+Host bitbucket.com-fbray
+    HostName bitbucket.com
+    User git
+    IdentityFile ~/.ssh/fbray
+    IdentitiesOnly yes
+    UseKeychain yes
+
 Host *
     IdentityFile ~/.ssh/brayfe
     UseKeychain yes
 
 Host *
     IdentityFile ~/.ssh/id_rsa
-    UseKeychain yes
-
-Host bitbucket.com-fbray
-    HostName bitbucket.com
-    User git
-    IdentityFile ~/.ssh/fbray
-    IdentitiesOnly yes
     UseKeychain yes
 
 # To prevent confirmation of new 
