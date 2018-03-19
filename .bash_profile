@@ -1,15 +1,17 @@
-export PATH="$HOME/.composer/vendor/bin:/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php/php5.6.28/bin:$HOME/bin:$PATH"
+source ~/.profile
+export PATH="$HOME/.composer/vendor/bin:$HOME/.terminus/vendor/bin:/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php/php5.6.28/bin:$HOME/bin:$PATH"
 
 ## Bash completion script for Drupal Console ##
-#source "$HOME/.console/console.rc" 2>/dev/null
+# source "$HOME/.console/console.rc" 2>/dev/null
 ## Command Completion script for terminus commands ##
-source "$HOME/bin/terminus-completion.bash"
+# source "$HOME/bin/terminus-completion.bash"
 
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-export PS1="\[\033[30m\]\u@\[\033[32m\]\h \[\033[1;31m\]\W\[\033[1;35m\]\$(parse_git_branch)\[\033[00m\] $ "
+export PS1="\[\033[32m\]\h \[\033[1;31m\]\W\[\033[1;35m\]\$(parse_git_branch)\[\033[00m\] $ "
+#export PS1="\[\033[30m\]\u@\[\033[32m\]\h \[\033[1;31m\]\W\[\033[1;35m\]\$(parse_git_branch)\[\033[00m\] $ "
 #export PS1="\u@\h \[\033[1;31m\]\W\[\033[1;35m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 alias drush7=/Users/brayfe/.composer/drush7/vendor/bin/drush
