@@ -1,8 +1,23 @@
+Host slalom.bitbucket
+    HostName bitbucket.com
+    User git
+    IdentityFile ~/.ssh/francine-bray
+    IdentitiesOnly yes
+    UseKeychain yes
+
+Host h-m
+    HostName southpawnotes.com
+    User southpg4
+
 Host bitbucket.com-fbray
     HostName bitbucket.com
     User git
     IdentityFile ~/.ssh/fbray
     IdentitiesOnly yes
+    UseKeychain yes
+
+Host *
+    IdentityFile ~/.ssh/bb-pipelines
     UseKeychain yes
 
 Host *
