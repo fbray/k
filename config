@@ -1,9 +1,24 @@
+Host svn-4707.devcloud.hosting.acquia.com
+    User pemcms
+    IdentityFile ~/.ssh/ospem-bb-pipelines
+    IdentitiesOnly yes
+
+Host 52.166.71.39
+Host 172.18.108.234
+    User git
+    IdentityFile ~/.ssh/nestle
+    IdentitiesOnly yes
+
+Host gitlab.spectrumxg.com
+    User git
+    IdentityFile ~/.ssh/francine-bray
+    IdentitiesOnly yes
+
 Host slalom.bitbucket
     HostName bitbucket.com
     User git
     IdentityFile ~/.ssh/francine-bray
     IdentitiesOnly yes
-    UseKeychain yes
 
 Host h-m
     HostName southpawnotes.com
@@ -14,19 +29,15 @@ Host bitbucket.com-fbray
     User git
     IdentityFile ~/.ssh/fbray
     IdentitiesOnly yes
-    UseKeychain yes
 
 Host *
     IdentityFile ~/.ssh/bb-pipelines
-    UseKeychain yes
 
 Host *
     IdentityFile ~/.ssh/brayfe
-    UseKeychain yes
 
 Host *
     IdentityFile ~/.ssh/id_rsa
-    UseKeychain yes
 
 # To prevent confirmation of new 
 # server connections for sites on Pantheon
