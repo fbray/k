@@ -1,3 +1,10 @@
+Host newthing
+    Hostname bitbucket.com
+    User git
+    IdentityFile ~/.ssh/whitehat-ospem
+    IdentitiesOnly yes
+
+
 Host svn-4707.devcloud.hosting.acquia.com
     User pemcms
     IdentityFile ~/.ssh/ospem-bb-pipelines
